@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { SingletonExampleComponent } from './components/singleton-example/singleton-example.component';
 import { FactoryComponent } from './components/factory/factory.component';
 import { FactoryMethodComponent } from './factory-method/factory-method.component';
+import { AbstractFactoryComponent } from './abstract-factory/abstract-factory.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SingletonExampleComponent,
     FactoryComponent,
-    FactoryMethodComponent
+    FactoryMethodComponent,
+    AbstractFactoryComponent
   ],
   imports: [
     BrowserModule,

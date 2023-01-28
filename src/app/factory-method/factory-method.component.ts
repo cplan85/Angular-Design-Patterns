@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { PizzaFactory } from '../models/pizzaFactory.model';
+import { Creator } from './models/Creater.model';
+import { ConcreteCreator1 } from './models/ConcreteCreater1.model';
+import { ConcreteCreator2 } from './models/ConcreteCreator2.model';
 
 @Component({
   selector: 'app-factory-method',
@@ -8,16 +10,29 @@ import { PizzaFactory } from '../models/pizzaFactory.model';
 })
 export class FactoryMethodComponent implements OnInit {
 
+NYFactoryResults: string = '';
+ChicagoFactoryResults: string = '';
+
   constructor() { }
 
   ngOnInit(): void {
 
-    let chicagoPizza = PizzaFactory.createPizza("cheese");
-  //  let NYPizza = PizzaFactory.createPizza("cheese", "NY");
+    /**
+ * The Application picks a creator's type depending on the configuration or
+ * environment.
+ */
+console.log('App: Launched with the ConcreteCreator1.');
+this.NYFactoryResults = this.runCreator(new ConcreteCreator1());
 
-  //  console.log(chicagoPizza.crustType);
+console.log('App: Launched with the ConcreteCreator2.');
+this.ChicagoFactoryResults = this.runCreator(new ConcreteCreator2());
 
-  //  console.log(NYPizza.crustType);
   }
 
+  runCreator(creator: Creator) {
+    //console.log('Client: I\'m not aware of the creator\'s class, but it still works.');
+    return creator.someOperation();
+  }
+
+  
 }

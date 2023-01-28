@@ -8,6 +8,16 @@
     padding: 1rem;
 }
 
+.factory-method-container {
+    background-color: rgb(223, 255, 226);
+    padding: 1rem;
+}
+
 div {
     margin: 1rem;
+}
+
+.abstract-factory-container {
+    background-color: rgb(217, 255, 181);
+    padding: 1rem;
 }
