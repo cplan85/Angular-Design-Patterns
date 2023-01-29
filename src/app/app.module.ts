@@ -9,6 +9,7 @@ import { FactoryComponent } from './components/factory/factory.component';
 import { FactoryMethodComponent } from './factory-method/factory-method.component';
 import { AbstractFactoryComponent } from './abstract-factory/abstract-factory.component';
 import { BuilderComponent } from './components/builder/builder.component';
+import { PersonBuilderComponent } from './components/person-builder/person-builder.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BuilderComponent } from './components/builder/builder.component';
     FactoryComponent,
     FactoryMethodComponent,
     AbstractFactoryComponent,
-    BuilderComponent
+    BuilderComponent,
+    PersonBuilderComponent
   ],
   imports: [
     BrowserModule,
