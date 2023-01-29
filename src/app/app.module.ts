@@ -8,6 +8,7 @@ import { SingletonExampleComponent } from './components/singleton-example/single
 import { FactoryComponent } from './components/factory/factory.component';
 import { FactoryMethodComponent } from './factory-method/factory-method.component';
 import { AbstractFactoryComponent } from './abstract-factory/abstract-factory.component';
+import { BuilderComponent } from './components/builder/builder.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AbstractFactoryComponent } from './abstract-factory/abstract-factory.co
     SingletonExampleComponent,
     FactoryComponent,
     FactoryMethodComponent,
-    AbstractFactoryComponent
+    AbstractFactoryComponent,
+    BuilderComponent
   ],
   imports: [
     BrowserModule,
